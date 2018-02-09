@@ -63,6 +63,8 @@ public:
    * @param z The measurement at k+1
    */
   void UpdateEKF(const Eigen::VectorXd &z);
+  // a helper function for common update process
+  void KalmanE(const Eigen::VectorXd &y);
 
 };
 
